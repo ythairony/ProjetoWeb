@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 
+amarelo #ffce2b 
+verde #00c9a8
+font-family: 'Roboto', sans-serif;
+*/
+:root {
+    --white: #fff;
+    --black: #000;
+    --green1: #31ACB2;
+    --green2: #36B8BF;
+    --font: font-family: 'Roboto', sans-serif;
+  }
+  
+
+
+body {
+    background-color: var(--white);
+    color: var(--black);
+    width: 1400px;
+    margin: auto;
+    /* border: 1px solid black;  */
+    /* depois tirar essa bordar */
+}
+
+header {
+    /* background-color: var(--yellow); */
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    /* box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.103); */
+}
+
+a.textologo {
+    text-decoration: none;
+    line-height: 60px;
+    color: var(--green1);
+    transition: 0.5s;
+}
+
+a.textologo:hover {
+    color: var(--green2);
+}
+
+div.logo {
+    transition: 0.5s;
+}
+
+div.logo:hover{
+    background-color: var(--green1);
+    border-radius: 10px;
+}
+
+nav a{
+    color: var(--black);
+    float: right;
+    line-height: 60px;
+    padding: 0px 10px;
+    text-decoration: none;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+nav a:hover{
+    color: var(--yellow);
+    background-color: var(--green2);
+    border-radius: 10px;
+    
+}
+
+.cadastro {
+    color: var(--black);
+    transition: color 0.5s, background-color 0.5s;
+    text-decoration: none;
+    background-color: var(--green2);
+    border-radius: 10px;
+    /* height: 30px; */
+    }
+
+.cadastro:hover {
+    color: var(--green);
+    background-color: var(--green1);
+    border-radius: 10px;
+    line-height: 60px; 
+}
+
+.logo img {
+    /* background-color: var(--yellow); */
+    float: left;
+    padding-left: 20px;
+}
+
+img {
+    padding-top: 7px;
+    width: 200px;
+}
+
+.placeholder {
+    width: 350px;
+    border: 2px solid var(--green2);
+    border-radius: 3px;
+    
+}
+
+.search-btn {
+    border: 2px solid var(--green2);
+    color: var(--black);
+    border-radius: 3px;
+    transition: color 0.5s, background-color 0.5s;
+}
+.search-btn:hover {
+    color: var(--yellow);
+    background-color: var(--green2);
+}
+
+form {
+    float: right;
+    line-height: 60px;
+}
+
+div.menu {
+    background-color: var(--green2);
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+
+div a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: coral;
+    height: 1500px;
+    width: 100%;
+}
+
+.container {
+    background-color: bisque;
+    min-width: 250px;
+    height: 550px;
+    border: 1px solid black;
+    margin: 100px 20px;
+    justify-content: space-between;
+
+}
