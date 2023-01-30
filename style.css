@@ -75,7 +75,7 @@ nav a:hover{
     
 }
 
-.cadastro {
+.entrar {
     color: var(--black);
     transition: color 0.5s, background-color 0.5s;
     text-decoration: none;
@@ -84,7 +84,7 @@ nav a:hover{
     /* height: 30px; */
     }
 
-.cadastro:hover {
+.entrar:hover {
     color: var(--green);
     background-color: var(--green1);
     border-radius: 10px;
@@ -142,9 +142,11 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
     background-color: coral;
     height: 1500px;
     width: 100%;
+    padding: 0px 50px;
 }
 
 .container {
