@@ -21,7 +21,7 @@ font-family: 'Roboto', sans-serif;
 
 
 body {
-    background-color: var(--white);
+    background-color: white;
     color: var(--black);
     width: 1400px;
     margin: auto;
@@ -30,7 +30,7 @@ body {
 }
 
 header {
-    /* background-color: var(--yellow); */
+    background-color: rgba(189, 189, 189, 0.080);
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -39,40 +39,34 @@ header {
     /* box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.103); */
 }
 
-a.textologo {
-    text-decoration: none;
-    line-height: 60px;
-    color: var(--green1);
-    transition: 0.5s;
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-a.textologo:hover {
-    color: var(--green2);
-}
 
-div.logo {
-    transition: 0.5s;
-}
 
-div.logo:hover{
-    background-color: var(--green1);
-    border-radius: 10px;
-}
+nav div a{
 
-nav a{
     color: var(--black);
     float: right;
-    line-height: 60px;
+    /* line-height: 60px; */
     padding: 0px 10px;
     text-decoration: none;
     transition: color 0.5s, background-color 0.5s;
+    border-radius: 10px;
 }
 
-nav a:hover{
-    color: var(--yellow);
-    background-color: var(--green2);
-    border-radius: 10px;
-    
+
+.cad {
+    font-weight: 400;
+}
+
+.botoes {
+    padding-right: 10px;
 }
 
 .entrar {
@@ -81,6 +75,8 @@ nav a:hover{
     text-decoration: none;
     background-color: var(--green2);
     border-radius: 10px;
+    color: white;
+    font-weight: 400;
     /* height: 30px; */
     }
 
@@ -88,7 +84,7 @@ nav a:hover{
     color: var(--green);
     background-color: var(--green1);
     border-radius: 10px;
-    line-height: 60px; 
+    /* line-height: 60px;  */
 }
 
 .logo img {
@@ -125,12 +121,28 @@ form {
     line-height: 60px;
 }
 
-div.menu {
+section {
+    background-color: rgba(189, 189, 189, 0.080);
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
     background-color: var(--green2);
     margin: 20px 0px;
     padding: 10px;
     border-radius: 10px;
     align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    text-decoration: none;
+}
+
+.menu a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
 div a {
@@ -143,18 +155,74 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: coral;
-    height: 1500px;
+    background-color: rgba(189, 189, 189, 0.080);
+    height: 1600px;
     width: 100%;
     padding: 0px 50px;
 }
 
 .container {
-    background-color: bisque;
+    /* background-color: bisque; */
     min-width: 250px;
+    max-width: 250px;
     height: 550px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: 100px 20px;
     justify-content: space-between;
+    border-radius: 40px 40px 0px 0px;
+    position: relative;
+    overflow: hidden;
 
+}
+
+.disc {
+    background-color: var(--green2);
+    height: 180px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer {
+    background-color: rgba(189, 189, 189, 0.080);
+    height: 800px;
+}
+
+
+.container img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+h4 {
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+main p {
+    color: white;
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.footer {
+    height: 200px;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 100px;
+    font-family: sans-serif;
+}
+
+footer p {
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    padding: 50px 200px 100px 200px;
 }
